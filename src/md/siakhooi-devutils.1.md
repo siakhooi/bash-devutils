@@ -1,4 +1,4 @@
-% DevUtils(1) Siak Hooi Development Utilities 1.1.0
+% DevUtils(1) Siak Hooi DevUtils 1.1.0 | DevUtils Commands
 % Siak Hooi
 % March 2023
 
