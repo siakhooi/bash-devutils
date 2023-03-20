@@ -6,7 +6,7 @@ Package `siakhooi-devutils` as parent package of all `siakhooi-devutils-*` packa
 
 - `siakhooi-devutils-echo-colors`
 - `siakhooi-devutils-date-formats`
-- `siakhooi-devutils-indent`
+- `siakhooi-textutils`
 
 ## Quick Start
 

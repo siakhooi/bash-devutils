@@ -10,4 +10,4 @@ curl -L https://siakhooi.github.io/apt/siakhooi-apt.list > /etc/apt/sources.list
 curl -L https://siakhooi.github.io/apt/siakhooi-apt.gpg  > /usr/share/keyrings/siakhooi-apt.gpg
 apt update -y
 
-apt install -y ./siakhooi-devutils_1.1.1_amd64.deb
+apt install -y ./siakhooi-devutils_1.2.0_amd64.deb
