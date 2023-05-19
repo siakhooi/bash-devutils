@@ -16,4 +16,4 @@ MIT
 Report bugs at https://github.com/siakhooi/bash-devutils/issues.
 
 # SEE ALSO
-siakhooi-devutils-echo-colors(1), siakhooi-devutils-date-formats(1), siakhooi-textutils-indent(1)
+siakhooi-devutils-echo-colors(1), siakhooi-devutils-date-formats(1), siakhooi-textutils(1)

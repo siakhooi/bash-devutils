@@ -1,6 +1,6 @@
 # bash-devutils
 
-Package `siakhooi-devutils` as parent package of all `siakhooi-devutils-*` packages.
+Package `siakhooi-devutils` as parent package of several packages, basically for development purposes.
 
 ## Packages
 
