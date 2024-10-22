@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
-TARGET=target
-SOURCE=src
+readonly TARGET=target
+readonly SOURCE=src
 
 mkdir "$TARGET"
 
@@ -16,9 +16,9 @@ pandoc $SOURCE/md/siakhooi-devutils.1.md -s -t man | gzip -9 >$TARGET/usr/share/
 fakeroot dpkg-deb --build -Zxz $TARGET
 dpkg-name ${TARGET}.deb
 
-DEBFILE=$(ls ./*.deb)
+DEBFILE=$(basename "$(ls ./*.deb)")
 
-sha256sum "$DEBFILE" >$DEBFILE.sha256sum
-sha512sum "$DEBFILE" >$DEBFILE.sha512sum
+sha256sum "$DEBFILE" >"$DEBFILE.sha256sum"
+sha512sum "$DEBFILE" >"$DEBFILE.sha512sum"
 
 dpkg --contents "$DEBFILE"
