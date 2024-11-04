@@ -2,6 +2,12 @@ clean:
 	rm -rf target *.deb *.deb.sha256sum *.deb.sha512sum
 build-deb:
 	./scripts/build-deb.sh
+set-version:
+	scripts/set-version.sh
+git-commit-and-push:
+	scripts/git-commit-and-push.sh
+create-release:
+	scripts/create-release.sh
 
 test-man:
 	pandoc src/md/siakhooi-devutils.1.md -s -t man | man -l -
