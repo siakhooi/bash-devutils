@@ -3,7 +3,8 @@ on:
   push:
     branches:
       - "*"
+  workflow_call:
 
 jobs:
-  test:
-    uses: ./.github/workflows/build-with-shellcheck.yml
+  build-deb:
+    uses: ./.github/workflows/build-deb.yml
