@@ -15,6 +15,10 @@ jobs:
         with:
           name: deb-deliverables
           path: ./
+      - uses: actions/download-artifact@v4
+        with:
+          name: rpm-deliverables
+          path: ./
       - run: ls -l
       - uses: svenstaro/upload-release-action@v2
         with:
@@ -31,3 +35,18 @@ jobs:
           repo_token: ${{ secrets.TOKEN_TO_UPLOAD_ASSETS }}
           file_glob: true
           file: ./*.deb.sha512sum
+      - uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.TOKEN_TO_UPLOAD_ASSETS }}
+          file_glob: true
+          file: ./*.rpm
+      - uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.TOKEN_TO_UPLOAD_ASSETS }}
+          file_glob: true
+          file: ./*.rpm.sha256sum
+      - uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.TOKEN_TO_UPLOAD_ASSETS }}
+          file_glob: true
+          file: ./*.rpm.sha512sum

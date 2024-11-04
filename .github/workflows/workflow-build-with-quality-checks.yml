@@ -8,3 +8,5 @@ on:
 jobs:
   build-deb:
     uses: ./.github/workflows/build-deb.yml
+  build-rpm:
+    uses: ./.github/workflows/build-rpm.yml
