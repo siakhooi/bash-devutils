@@ -2,6 +2,8 @@ clean:
 	rm -rf target *.deb *.deb.sha256sum *.deb.sha512sum
 build-deb:
 	./scripts/build-deb.sh
+build-rpm:
+	scripts/build-rpms.sh
 set-version:
 	scripts/set-version.sh
 git-commit-and-push:
