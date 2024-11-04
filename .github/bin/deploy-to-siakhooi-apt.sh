@@ -8,12 +8,17 @@ DEBIAN_PACKAGE_FILE=$(basename "$PATH_TO_FILE")
 TMPDIR=$(mktemp -d)
 
 readonly TARGETPATH=docs/pool/main/binary-amd64
-readonly TARGETURL=https://${PUBLIC_TO_APT_GITHUB_TOKEN}@github.com/siakhooi/apt.git
+readonly TARGETURL=https://${PUBLISH_TO_GITHUB_REPO_TOKEN}@github.com/siakhooi/apt.git
 readonly TARGETBRANCH=main
 readonly TARGETDIR=apt
 readonly TARGET_GIT_EMAIL=devutils@siakhooi.github.io
 readonly TARGET_GIT_USERNAME=devutils
 TARGET_COMMIT_MESSAGE="bash-devutils: Auto deploy [$(date)]"
+
+if [[ -z $PUBLISH_TO_GITHUB_REPO_TOKEN ]]; then
+  echo "Error: PUBLISH_TO_GITHUB_REPO_TOKEN can not be null." >&2
+  exit 1
+fi
 
 (
   cd "$TMPDIR"
