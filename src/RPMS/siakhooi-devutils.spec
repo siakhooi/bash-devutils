@@ -8,7 +8,7 @@ URL:            https://github.com/siakhooi/bash-devutils
 Source0:        https://github.com/siakhooi/%{name}/archive/refs/tags/${version}.tar.gz
 BuildArch:      noarch
 
-Requires:       siakhooi-devutils-echo-colors, siakhooi-devutils-date-formats, siakhooi-textutils
+Requires:       siakhooi-devutils-echo-colors, siakhooi-devutils-date-formats, siakhooi-textutils, siakhooi-fileutils
 
 %description
 parent package for all siakhooi-devutils-* packages.
@@ -24,6 +24,9 @@ parent package for all siakhooi-devutils-* packages.
 %{_mandir}/man1/siakhooi-devutils.1.gz
 
 %changelog
+* Sun Sep 28 2025 Siak Hooi <siakhooi@gmail.com> - 1.4.0
+- add siakhooi-fileutils
+
 * Mon Nov 4 2024 Siak Hooi <siakhooi@gmail.com> - 1.3.0
 - initial rpm version
 

@@ -10,6 +10,8 @@ git-commit-and-push:
 	scripts/git-commit-and-push.sh
 create-release:
 	scripts/create-release.sh
+all-deb: clean set-version build-deb
+all-rpm: clean set-version build-rpm
 
 test-man:
 	pandoc src/md/siakhooi-devutils.1.md -s -t man | man -l -

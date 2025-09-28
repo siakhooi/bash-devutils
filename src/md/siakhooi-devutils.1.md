@@ -8,6 +8,7 @@ Parent packages of several packages for development and testing:
 - siakhooi-devutils-echo-colors
 - siakhooi-devutils-date-formats
 - siakhooi-textutils
+- siakhooi-fileutils
 
 # LICENSE
 MIT

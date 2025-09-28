@@ -7,6 +7,7 @@ Package `siakhooi-devutils` as parent package of several packages, basically for
 - `siakhooi-devutils-echo-colors`
 - `siakhooi-devutils-date-formats`
 - `siakhooi-textutils`
+- `siakhooi-fileutils`
 
 ## Quick Start
 
